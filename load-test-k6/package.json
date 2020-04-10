@@ -1,0 +1,30 @@
+{
+  "name": "load-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "bundle": "webpack",
+    "check": "eslint --max-warnings=0 src/",
+    "fix": "eslint --fix src/",
+    "start": "k6 run dist/load_tests.bundle.js",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "k6": "0.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "babel-loader": "8.1.0",
+    "core-js": "3.6.4",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsdoc": "22.1.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "prettier": "1.18.2",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11"
+  }
+}

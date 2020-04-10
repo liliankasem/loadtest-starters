@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  load-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TARGET_URL: http://<YOUR_TARGET_URL>
+      # K6_OUT: "--out json=result.json"

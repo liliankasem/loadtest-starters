@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  locust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: locust
+    environment:
+      TARGET_URL: <YOUR_TARGET_URL>
+      LOCUSTFILE_PATH: /tests/locustfile.py
+      # Without the web UI
+      #LOCUST_OPTS: "--no-web -c 10 -r 600"
+    ports:
+      - "8089:8089"

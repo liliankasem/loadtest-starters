@@ -1,0 +1,11 @@
+# Virtual Env
+venv/
+
+# pycache
+__pycache__
+
+# VS Code
+.vscode
+
+# Other
+.DS_Store
